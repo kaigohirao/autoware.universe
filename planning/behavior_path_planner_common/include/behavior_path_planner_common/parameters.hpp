@@ -30,7 +30,6 @@ struct ModuleConfigParameters
 
 struct BehaviorPathPlannerParameters
 {
-  bool verbose;
   size_t max_iteration_num{100};
   double traffic_light_signal_timeout{1.0};
 
@@ -55,6 +54,7 @@ struct BehaviorPathPlannerParameters
   double turn_signal_search_time;
   double turn_signal_minimum_search_distance;
   double turn_signal_shift_length_threshold;
+  double turn_signal_remaining_shift_length_threshold;
   bool turn_signal_on_swerving;
 
   bool enable_akima_spline_first;
